@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Class</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <script src="/materialize/js/materialize.min.js"></script>
+    <script src="/materialize/js/jquery.js"></script>
+
+        <style>
+            header{
+                background-image: url(star.jpg);
+                background-size: cover;
+                background-position: center;
+                min-height: 400px;
+            }
+            @media screen and (max-width: 670px) {
+                header{
+                    min-height: 500px;
+                }
+            }
+        </style>
+</head>
+<body>
+    <header>
+    <div class="navbar-fixed">
+    <nav class="nav-wrapper transparent">
+        <div class="container">
+            <a href="#" class="brand-logo">Materialize</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#">Home</a> </li>
+                <li><a href="parallax.html">About Us</a> </li>
+                <li><a href="contact.html">Contact</a> </li>
+                <li><i class="material-icons left">location_on</i></li>
+                <li><i class="material-icons left">notifications_none</i></li>
+                
+            </ul>
+        </div>
+        
+    </nav>
+    </div>
+</header>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="grid.html">Home</a> </li>
+        <li><a href="parallax.html">About Us</a> </li>
+        <li><a href="contact.html">Contact</a> </li>
+    </ul>
+
+
+    <div class="container center-align #eeeeee grey lighten-3 ">
+        <!--the heading part-->
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <h1><u> My Materialize Class</u></h1>
+            </div>
+        </div>
+        <div class="container">
+            <h3 class="left-align"> Grid and Table Class</h3>
+        </div>
+
+        <!--12 column for summary-->
+        <div class=" container row">
+            <div class="col s12 m12 l12 #e1bee7 purple lighten-4 left-align">
+                <p class=" flow-text white-text">Summary of Grid:</p>
+                <P>Grid is use to divide a page into major regions or defining the relationship in terms of size, position, and layer, between parts of a control built from HTML primitives</P>
+                <P>To successfully create a grid using materialize, we need to create a div with class named row and nested div to create columns </P>
+                <!-- <P>to get the desired columns, you can divide through by the standard grid which is 12 colums 12/3= 4columns  </P> -->
+            </div>
+
+    
+        </div>
+
+        <!--6 colums left and right-->
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6 l6 #e1bee7 purple lighten-1 left-align"><P>Grid is use to divide a page into major regions or defining the relationship in terms of size, between parts of a control built from HTML primitives</P>
+                </div>
+                    
+                <div class="col s12 m6 l6 #e1bee7 purple lighten-4 left-align">  <P>To successfully create a grid using materialize, we need to create a div with class named row and nested div to create columns </P> </div>
+            </div>
+
+        </div>
+
+        <!--Table with hover and striped-->
+        <h3 class="center-align"><u>Participants</u></h3>
+            <div class="container">
+                <table class="striped #e1bee7 purple lighten-4" >
+                    <tr class="hoverable">
+                        <th class="center-align">First Name</th>
+                        <th class="center-align">Last Name</th>
+                    </tr>
+
+                    <tr class="hoverable">
+                        <td class="center-align">Toluwase</td>
+                        <td class="center-align">Ibrahim</td>
+                    </tr>
+
+                    <tr class="hoverable">
+                        <td class="center-align">Ayomide</td>
+                        <td class="center-align">Yusuf</td>
+                    </tr>
+
+                    <tr class="hoverable">
+                        <td class="center-align">Olabisi</td>
+                        <td class="center-align">Ibrahim</td>
+                    </tr>
+
+                    <tr class="hoverable">
+                        <td class="center-align">Eunice</td>
+                        <td class="center-align">Olatunji</td>
+                    </tr>
+
+                    <tr class="hoverable">
+                        <td class="center-align">Ivana</td>
+                        <td class="center-align">Olatunji</td>
+                    </tr>
+                    <tr class="hoverable">
+                        <td class="center-align">Jotham</td>
+                        <td class="center-align">Olatunji</td>
+                    </tr>
+                    <tr class="hoverable">
+                        <td class="center-align">Tolulope</td>
+                        <td class="center-align">Olatunji</td>
+                    </tr>
+                    <tr class="hoverable">
+                        <td class="center-align">Kelechi</td>
+                        <td class="center-align">Paul</td>
+                    </tr>
+                    <tr class="hoverable"> 
+                        <td class="center-align">Green</td>
+                        <td class="center-align">Ibrahim</td>
+                    </tr>
+                    <tr class="hoverable">
+                        <td class="center-align">Ayotomide</td>
+                        <td class="center-align">Yusuf</td>
+                    </tr>
+
+
+                </table>
+            </div>
+    </div>
+    <footer class="page-footer #ab47bc purple lighten-1">
+        <div class="container">
+            <div class="row">
+                <div class="col s6 m6 l6">
+                    <h5 class="white-text">Summary</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">About us</h5>
+                    <ul>
+                      <li><a class="grey-text text-lighten-3" href="#!">Services</a></li>
+                      <li><a class="grey-text text-lighten-3" href="#!">Contact</a></li>
+                      <li><a class="grey-text text-lighten-3" href="#!">Summary</a></li>
+                      <li><a class="grey-text text-lighten-3" href="#!"></a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p class="container center-align"> © 2020 designed by Green <a class="grey-text text-lighten-4" href="google.com">Pearls Link</a> </p> 
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- <script src="materialize/js/jquery.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+     var elem = document.querySelector('.sidenav');
+  var instance = new M.Sidenav(elem, {});
+ </script>
+
+</body>
+</html>
